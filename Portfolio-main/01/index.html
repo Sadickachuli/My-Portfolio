@@ -3,27 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- UNICONS -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
-    <!-- Add favicon -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
     <title>Portfolio</title>
   </head>
 
   <body>
     <div class="container">
-      <!-- --------------- HEADER --------------- -->
+      <!-- --------------- Header starts here--------------- -->
       <nav id="header">
         <div class="nav-logo">
           <p class="nav-name">Sadick</p>
@@ -50,18 +42,21 @@
           </ul>
         </div>
         <div class="nav-button">
-          <button class="btn">
-            Download CV <i class="uil uil-file-alt"></i>
-          </button>
+          <a href="./pdf/RESUME.pdf" download="RESUME">
+            <button class="btn">
+              Download Resume <i class="uil uil-file-alt"></i>
+            </button>
+          </a>
         </div>
         <div class="nav-menu-btn">
           <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
       </nav>
+      <!-- --------------- Header starts here--------------- -->
 
       <!-- -------------- MAIN ---------------- -->
       <main class="wrapper">
-        <!-- -------------- FEATURED BOX ---------------- -->
+        <!-- -------------- Featured box starts here ---------------- -->
         <section class="featured-box" id="home">
           <div class="featured-text">
             <div class="featured-text-card">
@@ -72,26 +67,22 @@
             </div>
             <div class="featured-text-info">
               <p>
-                Experienced software developer with a passion for creating
-                visually stunning and user-friendly websites.
+                Software Engineer driven by the transformative power of
+                technology to address real world challenges.
               </p>
             </div>
             <div class="featured-text-btn">
               <button class="btn blue-btn">Hire Me</button>
-              <button class="btn">
-                Download CV <i class="uil uil-file-alt"></i>
-              </button>
-            </div>
-            <div class="social_icons">
-              <div class="icon"><i class="uil uil-instagram"></i></div>
-              <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-              <div class="icon"><i class="uil uil-twitter"></i></div>
-              <div class="icon"><i class="uil uil-github-alt"></i></div>
+              <a href="./pdf/RESUME.pdf" download="RESUME">
+                <button class="btn">
+                  Download Resume <i class="uil uil-file-alt"></i>
+                </button>
+              </a>
             </div>
           </div>
           <div class="featured-image">
             <div class="image">
-              <img src="./profile.png" alt="avatar" />
+              <img src="./images/profile.png" class="my-image" alt="avatar" />
             </div>
           </div>
           <div class="scroll-icon-box">
@@ -101,7 +92,9 @@
             </a>
           </div>
         </section>
-        <!-- -------------- ABOUT BOX ---------------- -->
+        <!-- -------------- Featured box ends here ---------------- -->
+
+        <!-- -------------- About box Starts here ---------------- -->
         <section class="section" id="about">
           <div class="top-header">
             <h1>About Me</h1>
@@ -109,18 +102,19 @@
           <div class="row">
             <div class="col">
               <div class="about-info">
-                <h3>My introduction</h3>
+                <h3>Introduction</h3>
                 <p>
-                  I am well-versed in HTML, CSS and JavaScript , and other
-                  cutting edge frameworks and libraries,which allows me to
-                  implement interactive features. Additionally, I have
-                  experirence working with content management systems (CMS) like
-                  WordPress.
+                  Proficient in HTML, CSS, JavaScript, and advanced frameworks,
+                  I excel in implementing interactive features. Moreover, my
+                  expertise extends to backend development, enhancing my ability
+                  to create comprehensive and dynamic web solutions.
                 </p>
                 <div class="about-btn">
-                  <button class="btn">
-                    Download CV <i class="uil uil-import"></i>
-                  </button>
+                  <a href="./pdf/RESUME.pdf" download="RESUME">
+                    <button class="btn">
+                      Download Resume <i class="uil uil-import"></i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -134,9 +128,7 @@
                   <span>CSS</span>
                   <span>Bootstrap</span>
                   <span>JavaScript</span>
-                  <span>Vue</span>
                   <span>React</span>
-                  <span>Angular</span>
                 </div>
               </div>
               <div class="skills-box">
@@ -144,10 +136,8 @@
                   <h3>Backend</h3>
                 </div>
                 <div class="skills-list">
-                  <span>PHP</span>
                   <span>JAVA</span>
                   <span>Python</span>
-                  <span>C++</span>
                 </div>
               </div>
               <div class="skills-box">
@@ -156,15 +146,14 @@
                 </div>
                 <div class="skills-list">
                   <span>MySQL</span>
-                  <span>PostgreSQL</span>
-                  <span>MongoDB</span>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- -------------- About box ends here ---------------- -->
 
-        <!-- -------------- PROJECT BOX ---------------- -->
+        <!-- -------------- Project box starts heree ---------------- -->
 
         <section class="section" id="projects">
           <div class="top-header">
@@ -174,34 +163,38 @@
             <div class="project-box">
               <i class="uil uil-briefcase-alt"></i>
               <h3>Completed</h3>
-              <label>15+ Finished Projects</label>
+              <label>9+ Finished Projects</label>
             </div>
             <div class="project-box">
               <i class="uil uil-users-alt"></i>
               <h3>Clients</h3>
-              <label>25+ Happy Clients</label>
+              <label>5 Happy Clients</label>
             </div>
             <div class="project-box">
               <i class="uil uil-award"></i>
               <h3>Experience</h3>
-              <label>7+ Years in the field</label>
+              <label>1 Year in the field</label>
             </div>
           </div>
         </section>
+        <!-- -------------- Project box ends heree ---------------- -->
 
-        <!-- -------------- CONTACT BOX ---------------- -->
+        <!-- -------------- Contact Box Starts here---------------- -->
 
         <section class="section" id="contact">
           <div class="top-header">
             <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
+            <span>Contact me here</span>
           </div>
           <div class="row">
             <div class="col">
               <div class="contact-info">
                 <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                <p><i class="uil uil-envelope"></i> Email: john@doe.com</p>
-                <p><i class="uil uil-phone"></i> +91 70822 00001</p>
+                <p>
+                  <i class="uil uil-envelope"></i> Email:
+                  m.achuli@alustudent.com
+                </p>
+                <p><i class="uil uil-phone"></i> +250 79 1900 405</p>
               </div>
             </div>
             <div class="col">
@@ -222,12 +215,13 @@
             </div>
           </div>
         </section>
+        <!-- -------------- Contact Box endss here---------------- -->
       </main>
 
-      <!-- --------------- FOOTER --------------- -->
+      <!-- --------------- Footer Starts here--------------- -->
       <footer>
         <div class="top-footer">
-          <p>John Doe .</p>
+          <p>Sadick .</p>
         </div>
         <div class="middle-footer">
           <ul class="footer-menu">
@@ -246,19 +240,34 @@
           </ul>
         </div>
         <div class="footer-social-icons">
-          <div class="icon"><i class="uil uil-instagram"></i></div>
-          <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-          <div class="icon"><i class="uil uil-twitter"></i></div>
-          <div class="icon"><i class="uil uil-github-alt"></i></div>
+          <a href="https://www.instagram.com/s_adh_ick/" target="_blank">
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sadick-achuli-81955b249/"
+            target="_blank"
+          >
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+          </a>
+
+          <a href="https://twitter.com/Sadh_ick" target="_blank">
+            <div class="icon"><i class="uil uil-twitter"></i></div>
+          </a>
+
+          <a href="https://github.com/Sadickachuli" target="_blank">
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+          </a>
         </div>
         <div class="bottom-footer">
           <p>
             Copyright &copy;
-            <a href="#home" style="text-decoration: none">John Doe</a> - All
+            <a href="#home" style="text-decoration: none">Sadick</a> - All
             rights reserved
           </p>
         </div>
       </footer>
+      <!-- --------------- Footer Endss here--------------- -->
     </div>
 
     <!-- ----- TYPING JS Link ----- -->
